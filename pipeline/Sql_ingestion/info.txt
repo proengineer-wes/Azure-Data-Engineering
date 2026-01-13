@@ -1,0 +1,6 @@
+selected resource name:		Sql_ingestion
+selected resource type:		pipeline
+factory name:			Azure-data-factory-amee
+factory location:		eastus
+subscription id:		6842eb80-0447-4d56-ae6a-298107fd959f
+time of download (UTC):		Tue, 13 Jan 2026 13:36:10 GMT

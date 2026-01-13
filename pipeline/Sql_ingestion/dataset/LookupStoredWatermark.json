@@ -1,0 +1,28 @@
+{
+    "name": "LookupStoredWatermark",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "FileDataLakeStorage",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "Json",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobFSLocation",
+                "fileName": "StoredWatermark.json",
+                "folderPath": "Monitor",
+                "fileSystem": "bronze"
+            }
+        },
+        "schema": {
+            "type": "object",
+            "properties": {
+                "StoredWatermarkValue": {
+                    "type": "integer"
+                }
+            }
+        }
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}
