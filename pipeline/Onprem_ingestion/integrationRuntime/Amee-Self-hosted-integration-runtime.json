@@ -1,0 +1,6 @@
+{
+    "name": "Amee-Self-hosted-integration-runtime",
+    "properties": {
+        "type": "SelfHosted"
+    }
+}
