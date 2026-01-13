@@ -1,3 +1,10 @@
+![Azure](https://img.shields.io/badge/Microsoft_Azure-0078D4?logo=microsoft-azure&logoColor=white)
+![Azure Data Factory](https://img.shields.io/badge/Azure_Data_Factory-Orchestration-blue)
+![ADLS Gen2](https://img.shields.io/badge/Azure_Data_Lake_Gen2-Storage-orange)
+![Data Engineering](https://img.shields.io/badge/Data_Engineering-ETL%2FELT-success)
+
+
+
 # 🚀 Mastering Azure Data Factory – End-to-End Data Engineering Project
 
 ## 📌 Project Overview
@@ -5,6 +12,24 @@
 This repository showcases a **production-style**, **end-to-end Azure Data Engineering project** with a strong focus on **Azure Data Factory (ADF)**. The primary goal of this project is to **master data ingestion, orchestration, and transformation patterns using ADF**, while integrating other core Azure services to simulate a real-world enterprise data platform.
 
 The project follows Modern Data Stack principles and implements the **Medallion Architecture (Bronze, Silver, Gold)** to deliver reliable, scalable, and analytics-ready data.
+
+---
+
+## ❓ Why Azure Data Factory?
+
+Azure Data Factory is used as the central orchestration engine because it is purpose-built for enterprise-scale data movement and workflow automation in Azure.
+
+**Why ADF fits this project:**
+
+- Native integration with Azure services.
+
+- Supports hybrid ingestion via Self-Hosted Integration Runtime (SHIR)
+
+- Enables dynamic pipelines using parameters, Lookup, and ForEach
+
+- Cost-effective, scalable, and fully managed
+
+- Ideal for building repeatable and reliable enterprise ETL/ELT pipelines
 
 ---
 
@@ -203,7 +228,20 @@ The project follows Modern Data Stack principles and implements the **Medallion 
 
 ----
 
-✅ Conclusion
+## 🛠 Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests for improvements.
+
+----
+
+## ⭐ Support
+
+If this project helped you learn Azure Data Engineering, please give it a ⭐!
+
+----
+
+
+## ✅ Conclusion
 
 This project demonstrates **production-grade Azure Data Factory engineering**, emphasizing scalable orchestration, metadata-driven pipelines, and incremental processing. It reflects the type of **robust data platforms used at large-scale product and enterprise companies**, where reliability, automation, and data quality are critical to decision-making. This project demonstrates how Azure Data Factory can be used as a powerful orchestration engine to build scalable, enterprise-grade data pipelines—turning raw data into trusted, analytics-ready insights.
 
