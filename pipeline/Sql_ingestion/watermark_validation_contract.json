@@ -1,0 +1,46 @@
+{
+  "pipeline": "Sql_ingestion",
+  "purpose": "Validate stored watermark before incremental SQL ingestion",
+  "required_inputs": [
+    "source_table",
+    "watermark_column",
+    "stored_watermark"
+  ],
+  "validation_rules": [
+    {
+      "name": "stored_watermark_exists",
+      "description": "Stored watermark must be present before incremental load starts",
+      "severity": "error"
+    },
+    {
+      "name": "stored_watermark_not_empty",
+      "description": "Stored watermark must not be null or empty",
+      "severity": "error"
+    },
+    {
+      "name": "stored_watermark_type_valid",
+      "description": "Stored watermark must match the configured watermark type",
+      "severity": "error"
+    },
+    {
+      "name": "stored_watermark_not_ahead_of_source",
+      "description": "Stored watermark must not be greater than the current source maximum watermark",
+      "severity": "error"
+    }
+  ],
+  "execution_metadata": {
+    "pipeline_name": "Sql_ingestion",
+    "captures": [
+      "run_id",
+      "source_table",
+      "watermark_column",
+      "stored_watermark",
+      "new_watermark",
+      "rows_copied",
+      "status",
+      "start_time",
+      "end_time",
+      "duration_seconds"
+    ]
+  }
+}
