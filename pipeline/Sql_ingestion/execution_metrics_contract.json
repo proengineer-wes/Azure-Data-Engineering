@@ -1,0 +1,30 @@
+{
+  "pipeline": "Sql_ingestion",
+  "execution_metrics": {
+    "pipeline_name": "Sql_ingestion",
+    "fields": [
+      "run_id",
+      "source_table",
+      "target_dataset",
+      "start_time",
+      "end_time",
+      "duration_seconds",
+      "rows_read",
+      "rows_written",
+      "rows_rejected",
+      "watermark_before",
+      "watermark_after",
+      "execution_status",
+      "failure_reason"
+    ]
+  },
+  "success_conditions": [
+    "rows_written >= 0",
+    "watermark_after >= watermark_before",
+    "execution_status == success"
+  ],
+  "failure_conditions": [
+    "execution_status == failed",
+    "failure_reason is populated"
+  ]
+}
