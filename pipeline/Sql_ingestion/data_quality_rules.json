@@ -1,0 +1,42 @@
+{
+  "pipeline": "Sql_ingestion",
+  "validation": [
+    {
+      "rule": "required_columns",
+      "enabled": true,
+      "severity": "error"
+    },
+    {
+      "rule": "null_validation",
+      "enabled": true,
+      "severity": "error"
+    },
+    {
+      "rule": "duplicate_primary_key",
+      "enabled": true,
+      "severity": "error"
+    },
+    {
+      "rule": "data_type_validation",
+      "enabled": true,
+      "severity": "error"
+    },
+    {
+      "rule": "row_count_validation",
+      "enabled": true,
+      "severity": "warning"
+    },
+    {
+      "rule": "watermark_validation",
+      "enabled": true,
+      "severity": "error"
+    }
+  ],
+  "execution_metrics": [
+    "rows_read",
+    "rows_valid",
+    "rows_rejected",
+    "validation_errors",
+    "execution_time_seconds"
+  ]
+}
